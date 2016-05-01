@@ -82,7 +82,6 @@ a:focus {
 
 .navbar-custom.top-nav-collapse {
     margin-bottom: 0;
-    text-transform: uppercase;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: transparent;
     text-align: right;
@@ -90,7 +89,10 @@ a:focus {
     color: #c56837;
 }
 
-
+.collapse.navbar-collapse.navbar-right.navbar-main-collapse, .collapsing.navbar-collapse.navbar-right.navbar-main-collapse {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
 
 .navbar-custom.top-nav-collapse .navbar-brand {
     opacity: 1;
@@ -322,15 +324,17 @@ a:focus {
   padding-bottom: 100px;
   margin: 0;
   height: 800px;
+  display: flex;
+  align-items: center;
   position: relative;
-}
-
-#about {
-  background: url(../img/group1.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+#about {
+  background: url(../img/group1.jpg) no-repeat center center;
 }
 
 #contact {
