@@ -94,16 +94,30 @@ a:focus {
   -webkit-box-shadow: none;
 }
 
+.navbar-collapse .navbar-nav {
+  height: 70px;
+}
+
+.navbar-collapse .navbar-nav li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
 .navbar-custom.top-nav-collapse .navbar-brand {
     opacity: 1;
     transition: 0.2s ease-in-out;
 }
 
 .navbar-custom .navbar-brand {
-    text-transform: full-width;
-    font-weight: 700;
     transition: 0.5s;
-    color: #c56837;
+    height: 70px;
+    padding: 10px 0;
+}
+
+.navbar-custom .navbar-brand img {
+  height: 50px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -334,7 +348,11 @@ a:focus {
 }
 
 #about {
-  background: url(../img/group1.jpg) no-repeat center center;
+  background: url(../img/kitchen.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 #contact {
@@ -365,7 +383,7 @@ a:focus {
 
 #store {
     color: #fff;
-    background: url(../img/group2.jpg) no-repeat center center;
+    background: url(../img/wedding.jpg) no-repeat center center;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
